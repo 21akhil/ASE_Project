@@ -2,5 +2,5 @@
 <p>Clown and Download the folder</p>
 <p>Edit  or do your applications in the downloaded folder</p>
 <p>Do a pull request</p>
-<p>use Comments so that you wont mess up the others work</p>
-<p>for more on how to do pull request refer </p>
+<p>Use <b>Comments</b> so that you wont mess up the others work</p>
+<p>To learn about git refer<a href="https://github.com/firstcontributions/first-contributions">Visit W3Schools</a> </p>
