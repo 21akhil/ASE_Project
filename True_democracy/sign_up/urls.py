@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from first_app import views
-
+from sign_up import views
+from django.urls import path
 urlPatterns = [
-	
+    path('',views.base,name = "index"),
 ]
