@@ -1,5 +1,17 @@
-{% extends "sign_up/base.html" %}
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% block body_block %}
-	<div class="jumbotron">
-		
-	</div>
+<div class="jumbotron">
+	{% if registered %}
+	 <h1>Thanks for Registering</h1>
+	{% else %}
+	 <h1>Register here</h1>
+	 <h3>Fill</h3>
+	 <form method="post" enctype="multipart/form-data">
+	 	{% csrf_token %}
+	 	{{ user_form|crispy }}
+	 	{{ profile_form|crispy }}
+	 	<input type="submit" name="" value="register">
+	 </form>
+	{% endif %}
+{% endblock %}
